@@ -1,4 +1,4 @@
-import workoutGif from '../public/FocusCarterChavez.gif'
+import workoutGif from '../public/FocusCarterChavez.mp4'
 import styles from '../styles/Projects.module.css'
 
 export default function Workout({ selected }) {
@@ -7,7 +7,6 @@ export default function Workout({ selected }) {
     <div>
       {selected === 'workout' ? 
           <div className={styles.project}>
-            {/* <h1 className={styles.projectname}>Workout App</h1> */}
             <div className={styles.description}>
             <p>Focus is a social media fitness app geared specifically towards 
               weight lifting. It is built with Swift, UIKit, and uses firebase 
@@ -23,7 +22,9 @@ export default function Workout({ selected }) {
               Monetization can be added into having trainers or teams pay for 
               accounts and the ability to create team workouts/track their clients 
               and athletes. </p>
-            <img className={styles.gif} src={workoutGif} alt="loading..." />
+            <video autoPlay="autoplay" loop="loop" className={styles.gif}>
+              <source src={workoutGif} />
+            </video>
             </div>
           </div> : null}
     </div>
