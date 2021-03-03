@@ -2,7 +2,7 @@
 
 After cloning the repo: 
 
-`yarn`
-`yarn dev`
+* `yarn`
+* `yarn dev`
 
 Navigate to localhost:3000
