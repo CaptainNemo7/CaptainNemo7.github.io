@@ -1,4 +1,4 @@
-import arMobileGif from '../public/armobileappmov.gif'
+import arMobileGif from '../public/ArMobileGame.mp4'
 import styles from '../styles/Projects.module.css'
 
 export default function Game({ selected }) {
@@ -6,7 +6,6 @@ export default function Game({ selected }) {
     <div>
       {selected === 'game' ? 
           <div className={styles.project}>
-            {/* <h1 className={styles.projectname}>AR Game</h1> */}
             <div className={styles.description}>
             <p>The Augmented Reality Multiplayer Location Based Game is a capture
                the flag based game experienced in augmented reality and based off 
@@ -19,7 +18,9 @@ export default function Game({ selected }) {
                  This could be monetized by having players pay $1 to join a round and 
                  to give winners of the game part of the pot, and keeping the rest of 
                  the entry fees for the company. </p>
-            <img className={styles.gif} src={arMobileGif} alt="loading..." />
+                 <video autoPlay="autoplay" loop="loop" className={styles.gif}>
+                  <source src={arMobileGif} />
+                </video>
             </div>
           </div> : null}
     </div>
