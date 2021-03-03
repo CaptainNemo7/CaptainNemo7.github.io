@@ -16,6 +16,7 @@
   height: 20%;
   width: 100%;
   color: black;
+  font-family: 'BonvenoCF', Arial, sans-serif;
 }
 
 .images {
@@ -42,6 +43,7 @@
   min-width: 90%;
   max-width: 100%;
   color: white;
+  font-family: 'BonvenoCF', Arial, sans-serif;
 }
 
 .scrollBtn {
@@ -51,6 +53,7 @@
   color: white;
   font-size: 2.25rem;
   padding: .75rem 1rem 1rem .75rem;
+  font-family: 'BonvenoCF', Arial, sans-serif;
 }
 
 .scrollBtn:hover {
@@ -76,7 +79,6 @@
 .info {
   font-size: 1.5rem;
   text-align: left;
-  
 }
 
 .code {
