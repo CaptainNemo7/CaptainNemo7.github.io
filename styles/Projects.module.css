@@ -35,7 +35,7 @@
   background-color: none;
   font-size: 3rem;
   display: inline;
-  padding: 0rem 2rem 2rem 2rem;
+  padding: 0rem 2rem 0.5rem 0.5rem;
 }
 
 .tabBtn:hover {
@@ -58,29 +58,26 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 60vw;
-  min-width: 250px;
-  text-align: right;
+  min-width: 300px;
   max-width: 100%;
 }
 
-.projectname {
-  padding-right: 6.5rem;
-}
-
 .description {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
   text-align: left;
+  justify-items: center;
   height: 70%;
   width: 90%;
   font-size: larger;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0rem 0rem 0.5rem 0rem;
 }
 
 .gif {
-  padding: 2.5rem 1rem 1rem 1rem;
+  padding: 1.75rem 1rem 1rem 1rem;
+  min-width: 250px;
+  min-height: 500px;
   max-width: 375px;
   max-height: 700px;
 }
