@@ -1,4 +1,4 @@
-import arMobileGif from '../public/RPReplay_Final.gif'
+import arMobileGif from '../public/ArShoppingApp.mp4'
 import styles from '../styles/Projects.module.css'
 
 export default function Shopping({ selected }) {
@@ -6,7 +6,6 @@ export default function Shopping({ selected }) {
     <div>
     {selected === 'shopping' ?
       <div className={styles.project}>
-        {/* <h1 className={styles.projectname}>AR Shopping</h1> */}
         <div className={styles.description}>
         <p>The Augmented Reality Shopping app is a snapchat like virtual, 
           ephemeral, social, shopping experience. It is built using Apples 
@@ -19,7 +18,9 @@ export default function Shopping({ selected }) {
           recommendations based off style decisions/past and current 
           purchase. Monetization can be added into taking a small percentage 
           of each item sold. </p>
-        <img className={styles.gif} src={arMobileGif} alt="loading..." />
+          <video autoPlay="autoplay" loop="loop" className={styles.gif}>
+            <source src={arMobileGif} />
+          </video>
         </div>
       </div> : null}
     </div>
