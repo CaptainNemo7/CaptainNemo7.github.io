@@ -5,7 +5,7 @@ import Game from './game'
 import Shopping from './shopping'
 
 export default function Projects({ reference }) {
-  const [selected, setSelected] = useState('workout');
+  const [selected, setSelected] = useState('shopping');
   
   const toggleSelected = (project) => {
     setSelected(project);
@@ -17,15 +17,15 @@ export default function Projects({ reference }) {
         <div ref={reference} className={styles.project}>
 
         <div className={styles.tabBtns}>
-          <p className={styles.tabBtn} onClick={() => toggleSelected('workout')} >Focus</p>
           <p className={styles.tabBtn} onClick={() => toggleSelected('shopping')} >AR Shopping</p>
+          <p className={styles.tabBtn} onClick={() => toggleSelected('workout')} >Focus</p>
           <p className={styles.tabBtn} onClick={() => toggleSelected('game')} >AR Game</p>
         </div>
 
         <div>
+          <Shopping selected={selected} />
           <Workout selected={selected} />
           <Game selected={selected} />
-          <Shopping selected={selected} />
         </div>               
         </div>
       </main>

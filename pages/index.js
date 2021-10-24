@@ -35,9 +35,10 @@ export default function Home() {
         <h1 className={styles.title}>Hi. I'm Carter.</h1>
 
         <div className={styles.info}>
-          <p>I'm a web/mobile developer based in Seattle, WA.</p>
+          <p>I do software.</p>
+          <p>Currently based in Seattle, WA.</p>
           <p>I've written, tested, and deployed code for Nike and Amazon.</p>
-          <p>Open to new opportunities.</p>
+          <p>Always looking for new exciting opportunities.</p>
         </div>
 
         <div className={styles.scrollBtns}>
@@ -47,14 +48,6 @@ export default function Home() {
           >
             My Projects
           </button>
-          <p className={styles.scrollBtn}>
-            <a
-              target="_blank"
-              href="https://docs.google.com/document/d/1KSkjVjyoDxd_het5wFj_MD3Qia_rboluYMGf2e9Ak3k/edit"
-            >
-              Resume
-            </a>
-          </p>
         </div>
       </main>
       <div>

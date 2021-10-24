@@ -23,7 +23,7 @@ export default function Workout({ selected }) {
               accounts and the ability to create team workouts/track their
               clients and athletes.{' '}
             </p>
-            <video autoPlay="autoplay" loop="loop" className={styles.gif}>
+            <video autoPlay={true} muted loop="loop" className={styles.gif}>
               <source src={workoutGif} />
             </video>
           </div>

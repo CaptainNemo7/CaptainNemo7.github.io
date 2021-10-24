@@ -19,7 +19,7 @@ export default function Shopping({ selected }) {
               based off style decisions/past and current purchase. Monetization
               can be added into taking a small percentage of each item sold.{' '}
             </p>
-            <video autoPlay="autoplay" loop="loop" className={styles.gif}>
+            <video autoPlay={true} muted loop="loop" className={styles.gif}>
               <source src={arMobileGif} />
             </video>
           </div>
