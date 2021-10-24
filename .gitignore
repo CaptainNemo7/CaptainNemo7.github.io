@@ -2,4 +2,3 @@ node_modules
 .next
 .yml
 package-lock.json
-README.md
