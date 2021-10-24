@@ -6,3 +6,11 @@ After cloning the repo:
 * `yarn dev`
 
 Navigate to localhost:3000
+
+
+# steps:
+# update code and run npm run export
+# delete current docs page
+# rename out folder to docs (this folder came from npm run export)
+# add .nojekyll file to new docs folder (this protects the css)
+# push it up
